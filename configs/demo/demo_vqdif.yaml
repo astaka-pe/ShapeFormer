@@ -26,4 +26,5 @@ callbacks:
       max_length: 512
       vocab_size: 4096
       end_tokens: [4096,4096]
+      #end_tokens: [14667, 14667]
       visual_indices: all

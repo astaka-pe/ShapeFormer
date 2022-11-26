@@ -181,6 +181,7 @@ def batch_sparse2dense(sparse, empty_ind, dense_res, return_flattened=False, dim
         torch.zeros(batch_size, *((dense_res,)*dim)).type_as(sparse)
     # (K, dim)
     grid_ind = ptutil.unravel_index(raveled_ind, shape=(dense_res,)*dim)
+    import pdb;pdb.set_trace()
     # fill in the values
     dense[(batch_ind[:, None], *grid_ind.split(1, dim=-1))] = val[:, None]
     if return_flattened == True:

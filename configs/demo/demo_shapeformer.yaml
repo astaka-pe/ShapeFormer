@@ -24,6 +24,7 @@ callbacks:
       no_sanity_check: True
       every_n_epoch: 4
       end_tokens: [4096, 4096]
+      # end_tokens: [14667, 14667]
 
       top_k: 100
       top_p: 0.4
